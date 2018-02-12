@@ -1,0 +1,33 @@
+﻿<Window x:Class="GetStream.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" Closing="Window_Closing"
+        Loaded="MainWindow_Loaded">
+
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Padding" Value="5,0"/>
+        </Style>
+    </Window.Resources>
+    <Grid x:Name="LayoutRoot" ShowGridLines="True" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel x:Name="pnlCommand" Grid.Row="1" Grid.Column="1" Orientation="Vertical">
+            <!--<Button x:Name="btnSnap" Content="Snap1" Width="100px" Height="24px"></Button>
+            <Button x:Name="btnSnap2" Content="Snap2" Width="100px" Height="24px"></Button>
+            <Button x:Name="btnSnap3" Content="Snap3" Width="100px" Height="24px"></Button>-->
+        </StackPanel>
+        
+    </Grid>
+    
+</Window>
